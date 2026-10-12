@@ -38,6 +38,14 @@ list, update, and delete MongoDB records without reloading the page.
 If MongoDB is unavailable, the app reports the connection error and the item
 API responds with HTTP 503; start MongoDB and restart the app to connect.
 
+## RESTful To-Do API
+
+Set `MONGO_URI` in `.env` to a local MongoDB database such as
+`mongodb://127.0.0.1:27017/todo-list`, start MongoDB, then run `npm run dev`.
+Open `http://localhost:3000/todo-api.html` to exercise the task endpoints.
+The API supports `POST /api/tasks`, `GET /api/tasks/:userId`,
+`PUT /api/tasks/:id`, and `DELETE /api/tasks/:id`.
+
 The application also retains the earlier Express demos: `/users` and
 `/register` for EJS, and `/session-demo` or `/login` for sessions and
 authentication.
@@ -72,3 +80,5 @@ in-memory session store is for learning only and is not suitable for production.
 # fsdweek10
 
 # fsdweek11
+
+# fsdweek12
